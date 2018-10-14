@@ -1,15 +1,74 @@
 body {
-  background-color: #dafffc;
+  font-size: 62.5%;
+  margin: 0;
+  background-image: url("imagini/repetitive-patten-3d.jpg");
+  background-attachment: fixed;
+  font-family: serif;
 }
-div {
-  background-color: white;
-  padding: 10px;
-  margin: 10px;
-  border: 1px solid #777777;
+* {
+  margin: 0;
+  padding: 0;
+  opacity: 1;
+}
+.maindiv {
+  background-color: #848e8e;
+  font-size: 2.4em;
+  padding: 2em;
+  margin: auto;
+  width: 900px;
+  height: 1300px;
+  opacity: 0.95;
+  position: relative;
+}
+#poza {
+  position: absolute;
+  top: 70px;
+  right: 50px;
+  margin: auto;
+}
+img.round {
+  border-radius: 30%;
+}
+.secundar {
+  background-color: #ccddff;
+  border: 3px solid black;
+  margin: 20px;
+  padding: 20px;
+  width: 500px;
+}
+#p1 {
+  font-size: 40;
+  padding-left: 20;
+  font-family: impact;
 }
 #motto {
-  color: darkgreen;
+  padding-left: 20;
 }
-.favorite {
-  font-weight: bold;
+ul {
+  padding-left: 30px;
+  list-style: circle;
+}
+h2 {
+  font-family: arial serif black;
+}
+.ani {
+  font-family: Arial serif;
+  text-decoration: underline;
+}
+table,
+th,
+td {
+  border: 2px solid black;
+  border-collapse: collapse;
+}
+th,
+td {
+  padding-left: 15px;
+  padding-right: 100px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+th {
+  font-family: Arial, Helvetica, serif;
+  font-size: 20px;
 }
