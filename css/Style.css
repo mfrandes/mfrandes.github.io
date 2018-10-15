@@ -42,8 +42,33 @@ img.round {
   font-family: impact;
 }
 #motto {
-  padding-left: 20;
+  padding-left: 20px;
 }
+#top-menu-bar {
+  text-align: center;
+  color: #fff;
+  background-color: #334455;
+}
+#top-menu-bar li {
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+#top-meu-bar li a {
+  padding: 0 15px 0 15px;
+  text-decoration: none;
+  margin: 2px 0 2px 0;
+  color: #fff;
+  display: inline-block;
+}
+#top-menu-bar a:visited {
+  color: #fff;
+}
+#top-menu-bar a:hover {
+  color: #334455;
+  background-color: #ffffff;
+}
+
 ul {
   padding-left: 30px;
   list-style: circle;
@@ -51,10 +76,7 @@ ul {
 h2 {
   font-family: arial serif black;
 }
-.ani {
-  font-family: Arial serif;
-  text-decoration: underline;
-}
+
 table,
 th,
 td {
