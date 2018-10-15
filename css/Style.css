@@ -5,6 +5,29 @@ body {
   background-attachment: fixed;
   font-family: serif;
 }
+.test {
+  border: 5px solid #000;
+  margin: 5px;
+  padding: 5psx;
+  background-color: white;
+}
+#content-wrap{
+  border-color: blue
+}
+#left-sidebar {
+  width: 30%;
+  float: left;
+  border-color: red
+
+}
+#content{
+  border-color: green;
+  padding-left: 30%
+}
+#content div {
+  border-color:
+
+}
 * {
   margin: 0;
   padding: 0;
@@ -38,8 +61,10 @@ img.round {
 }
 #p1 {
   font-size: 40;
-  padding-left: 20;
+  padding-left: 5px;
   font-family: impact;
+}
+
 }
 #motto {
   padding-left: 20px;
