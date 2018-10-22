@@ -1,107 +1,74 @@
 body {
-  font-size: 62.5%;
-  margin: 0;
-  background-image: url("imagini/repetitive-patten-3d.jpg");
-  background-attachment: fixed;
-  font-family: serif;
+  background-color: #f5f5f5;
 }
+
 .test {
   border: 5px solid #000;
-  margin: 5px;
-  padding: 5psx;
-  background-color: white;
+  margin: 2px;
+  padding: 2px;
 }
-#content-wrap{
-  border-color: blue
+#content-wrap {
+  border-color: blue;
 }
 #left-sidebar {
   width: 30%;
   float: left;
-  border-color: red
-
+  border-color: red;
 }
-#content{
+
+#content {
   border-color: green;
-  padding-left: 30%
+  padding-left: 30%;
 }
 #content div {
-  border-color:
+  border-color: lightgreen;
+}
 
+.page-block {
+  background-color: white;
+  padding: 24px;
+  margin: 10px;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 3px rgba(0, 0, 0, 0.2);
+  border-radius: 2px;
 }
-* {
-  margin: 0;
-  padding: 0;
-  opacity: 1;
-}
-.maindiv {
-  background-color: #848e8e;
-  font-size: 2.4em;
-  padding: 2em;
-  margin: auto;
-  width: 900px;
-  height: 1300px;
-  opacity: 0.95;
-  position: relative;
-}
-#poza {
-  position: absolute;
-  top: 70px;
-  right: 50px;
-  margin: auto;
+#my-picture {
+  border-radius: 50%;
 }
 img.round {
   border-radius: 30%;
 }
-.secundar {
-  background-color: #ccddff;
-  border: 3px solid black;
-  margin: 20px;
-  padding: 20px;
-  width: 500px;
-}
-#p1 {
-  font-size: 40;
-  padding-left: 5px;
-  font-family: impact;
+#motto {
+  color: darkgreen;
 }
 
-}
-#motto {
-  padding-left: 20px;
-}
 #top-menu-bar {
   text-align: center;
   color: #fff;
   background-color: #334455;
 }
 #top-menu-bar li {
-  display: inline;
   margin: 0;
   padding: 0;
+  display: inline;
 }
-#top-meu-bar li a {
-  padding: 0 15px 0 15px;
-  text-decoration: none;
+#top-menu-bar a {
+  padding: 5px 15px 5px 15px;
   margin: 2px 0 2px 0;
-  color: #fff;
+  text-decoration: none;
   display: inline-block;
+  color: #ffffff;
 }
 #top-menu-bar a:visited {
-  color: #fff;
+  color: #ffffff;
 }
 #top-menu-bar a:hover {
   color: #334455;
   background-color: #ffffff;
 }
 
-ul {
-  padding-left: 30px;
-  list-style: circle;
+.favorite {
+  font-weight: bold;
 }
-h2 {
-  font-family: arial serif black;
-}
-
 table,
 th,
 td {
@@ -114,8 +81,4 @@ td {
   padding-right: 100px;
   padding-top: 10px;
   padding-bottom: 10px;
-}
-th {
-  font-family: Arial, Helvetica, serif;
-  font-size: 20px;
 }
