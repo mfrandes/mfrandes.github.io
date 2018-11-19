@@ -36,7 +36,7 @@ function learningToAdd(a, b) {
         var stringOfOne = ''; //se reseteaza la fiecare iteratie
         
         if (b - i > 0) {
-            console.log(`Jorge has ${a + i} apples + Ethan has ${b - i} apples = in total they have ${sum} apples, if we take from Ethan one apple and we give it to Jorge, than...`); //aici am folosit 'template strings'
+            console.log(`Jorge has ${a + i} apples + Ethan has ${b - i} apples, if we take from Ethan one apple and we give it to Jorge, than...`); //aici am folosit 'template strings'
 
             for (var j = 0; j < b - i; j++) {
                 stringOfOne += ' + 1 apple'
