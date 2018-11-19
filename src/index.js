@@ -8,42 +8,22 @@ function show(id) {
   $(id).style.display = "block";
 }
 
-function showHomePage() {
-  hide("skills-page");
-  hide("languages-page");
-  hide("education-page");
-  show("home-page");
-  console.info("Click on home");
+function hideElement (el) {
+  page.style.display = 'none';
 }
 
-function showSkillsPage() {
-  hide("home-page");
-  hide("languages-page");
-  hide("education-page");
-  show("skills-page");
-  console.info("Click on skils");
+function hideAllPages() {
+  var pages = document.querySelectorAll(".page-block");
+  pages.forEach(hideElement);
 }
 
-function showEducationPage() {
-  hide("home-page");
-  hide("languages-page");
-  hide("skills-page")
-  show("education-page");
-  console.info("Click on skils");
+var links = document.querySelectorAll("#top-menu-bar a");
+for (var i = 0 ; i < links.lenght; i++) {
+  links[i].onclik = function() {
+    hideAllPages();
+    var page = this.getAttribute('data-page');
+    show(page + "-page");
+  };
 }
 
-function showLanguagesPage() {
-  hide("home-page");
-  hide("skills-page");
-  hide("education-page");
-  show("languages-page");
-  console.info("Click on languages");
-}
-
-$("home-menu").onclick = showHomePage;
-$("skills-menu").onclick = showSkillsPage;
-$("education-menu").onclick = showEducationPage;
-$("languages-menu").onclick = showLanguagesPage;
-
-
-
+show("home-page");
