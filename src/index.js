@@ -9,7 +9,7 @@ function show(id) {
 }
 
 function hideElement (el) {
-  page.style.display = 'none';
+  el.style.display = 'none';
 }
 
 function hideAllPages() {
@@ -18,8 +18,8 @@ function hideAllPages() {
 }
 
 var links = document.querySelectorAll("#top-menu-bar a");
-for (var i = 0 ; i < links.lenght; i++) {
-  links[i].onclik = function() {
+for (var i = 0; i < links.length; i++) {
+  links[i].onclick = function() {
     hideAllPages();
     var page = this.getAttribute('data-page');
     show(page + "-page");
