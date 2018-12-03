@@ -29,14 +29,24 @@ function initMenu() {
 }
 
 function initSkillsPage() {
-  var skills = [ 'js', 'HTML','css'];
+  var skills = [
+    ['js',   7, "Andrei"],
+    ['HTML', 6, "Elena"],
+    ['css',  2, ""]
+  ];
   var resultList = document.querySelector('#skills-page ul');
 
   var listItems = skills.map(function(skill) {
-    return `<li>${skill.toUpperCase()}</li>`;
+    var enorsedBy = '- Endorsed by';
+    if(skill[2] == ""){
+      enorsedBy = "";
+    }
+    return `<li> (1) ${skill[0].toUpperCase()}
+       <span style="color: gray">- ${skill[1]} ${enorsedBy}</span> ${skill[2]}
+       </li>`;
   });
 
-  console.log('resultList= ', listItems);
+  
   resultList.innerHTML = listItems.join('');
 }
 
