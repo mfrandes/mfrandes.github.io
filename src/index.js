@@ -41,8 +41,10 @@ function initSkillsPage() {
     if(skill[2] == ""){
       enorsedBy = "";
     }
-    return `<li> (1) ${skill[0].toUpperCase()}
-       <span style="color: gray">- ${skill[1]} ${enorsedBy}</span> ${skill[2]}
+    var name = skill[0].toUpperCase();
+    return `<li> (1) ${name}
+       <span style="color: gray">- ${skill[1]} ${enorsedBy}</span> 
+       ${skill[2]}
        </li>`;
   });
 
