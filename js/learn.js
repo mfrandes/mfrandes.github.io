@@ -5,8 +5,8 @@ function learnVariables() {
       console.info("Salut " + prenume + ", bine ai venit la noi!");
     }
   
-    var nume = "Matei";
-    var prenume = "Nicolae";
+    var nume = "Frandes";
+    var prenume = "Mircea";
     var owner = "Matei's";
     var msg1 = 'ai zis "Nick"?';
     var msg2 = 'Nu, am zis "Nicolae"';
@@ -17,7 +17,7 @@ function learnVariables() {
   
     var skills = ["html", "css", "js"];
   
-    prenume = "Nick";
+    prenume = "Mircea";
   
     console.info("toate variabilele au fost initializate");
     console.log(nume);
