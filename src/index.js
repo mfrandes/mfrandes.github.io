@@ -1,3 +1,4 @@
+    
 function initMenu() {
   var links = document.querySelectorAll("#top-menu-bar a");
   for (var i = 0; i < links.length; i++) {
@@ -9,7 +10,12 @@ function initMenu() {
   }
 }
 
-function displaySkills(skills) {
+function initSkillsPage() {
+  var skills = [
+    { name: 'js', endorsements: 7, endorsedBy: 'Andrei' },
+    { name: 'Html', endorsements: 6, endorsedBy: '' },
+    { name: 'css', endorsements: 2, endorsedBy: '' }
+  ];
   var resultList = document.querySelector('#skills-page ul');
 
   var listItems = skills.map(function (skill) {
@@ -23,23 +29,11 @@ function displaySkills(skills) {
        ${skill.endorsedBy}
        </li>`;
   });
+
+
   resultList.innerHTML = listItems.join('');
 }
 
-function initSkillsPage() {
-  console.info(" 1 first step in initSkillsPage")
-  $.ajax('data/skills.json').done(function (skills) {
-    console.info('2 file data', skills);
-    displaySkills()
-  })
-  console.info("3 last step in initSkillsPage")
-  //displaySkills(skill);
-}
-
 initMenu();
-$('#skills-page').show();
-
-
-console.info('start')
+$('#skills-page').fadeIn();
 initSkillsPage();
-console.info('end')
